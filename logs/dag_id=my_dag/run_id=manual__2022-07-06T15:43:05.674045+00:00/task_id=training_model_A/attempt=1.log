@@ -1,0 +1,22 @@
+[2022-07-06 15:43:11,049] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: my_dag.training_model_A manual__2022-07-06T15:43:05.674045+00:00 [queued]>
+[2022-07-06 15:43:11,157] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: my_dag.training_model_A manual__2022-07-06T15:43:05.674045+00:00 [queued]>
+[2022-07-06 15:43:11,159] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-06 15:43:11,164] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-07-06 15:43:11,194] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-06 15:43:11,471] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): training_model_A> on 2022-07-06 15:43:05.674045+00:00
+[2022-07-06 15:43:11,497] {standard_task_runner.py:52} INFO - Started process 298 to run task
+[2022-07-06 15:43:11,605] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'my_dag', 'training_model_A', 'manual__2022-07-06T15:43:05.674045+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/my_ml_dag.py', '--cfg-path', '/tmp/tmp2uii8f8p', '--error-file', '/tmp/tmp2p3cuhg2']
+[2022-07-06 15:43:11,607] {standard_task_runner.py:80} INFO - Job 30: Subtask training_model_A
+[2022-07-06 15:43:14,223] {task_command.py:370} INFO - Running <TaskInstance: my_dag.training_model_A manual__2022-07-06T15:43:05.674045+00:00 [running]> on host fce85b9f2669
+[2022-07-06 15:43:16,579] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=my_dag
+AIRFLOW_CTX_TASK_ID=training_model_A
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-06T15:43:05.674045+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-06T15:43:05.674045+00:00
+[2022-07-06 15:43:16,606] {python.py:173} INFO - Done. Returned value was: 9
+[2022-07-06 15:43:16,917] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=my_dag, task_id=training_model_A, execution_date=20220706T154305, start_date=20220706T154311, end_date=20220706T154316
+[2022-07-06 15:43:17,063] {local_task_job.py:220} WARNING - State of this instance has been externally set to success. Terminating instance.
